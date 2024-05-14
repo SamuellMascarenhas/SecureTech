@@ -431,10 +431,10 @@ footer {
 /* Estilos para o menu responsivo */
 @media (max-width: 768px) {
   body {
-    background-image: url('../IMG/3409297.jpg');
+    background-image: url('../IMG/backgroundMobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+ 
     z-index: -1; /* Mantém a imagem no fundo */
 }
 
@@ -444,6 +444,7 @@ footer {
 
   .menunav ul {
     flex-direction: column;
+    z-index: 1;
     position: absolute;
     top: 100px;
     left: -100%;
@@ -514,7 +515,8 @@ footer {
   .services-box {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    margin: auto;
 
   }
 
@@ -522,7 +524,8 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    justify-content: center;
+    margin: auto;
     gap: 35px;
 
   }
@@ -530,8 +533,10 @@ footer {
   .box-servicos {
     width: 90%;
     margin: auto;
-
+    justify-content: center;
+    display: flex;
     margin-bottom: 25px;
+    
   }
 
 }

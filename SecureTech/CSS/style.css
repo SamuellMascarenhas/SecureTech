@@ -21,6 +21,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1; /* Mantém a imagem no fundo */
+    height: 100%;
+    width: 100%;
    
 }
 
@@ -502,6 +504,9 @@ footer {
         background-image: url('../IMG/personal-circle.gif');
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
     }
 
     header {
