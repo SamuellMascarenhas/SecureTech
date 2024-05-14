@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #000;
+
     background-image: url('../IMG/background home.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -359,10 +359,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .footer {
-
     padding: 10px;
 
 }
