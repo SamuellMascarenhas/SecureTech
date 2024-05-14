@@ -429,6 +429,12 @@ footer {
 
 /* Estilos para o menu responsivo */
 @media (max-width: 768px) {
+  body {
+    background-image: url('../IMG/personal-circle.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
   .hamburger-menu {
     display: flex;
   }

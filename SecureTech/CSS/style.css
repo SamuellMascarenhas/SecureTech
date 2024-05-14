@@ -15,10 +15,11 @@
 }
 
 body {
-
+    
     background-image: url('../IMG/background home.svg');
     background-size: cover;
     background-repeat: no-repeat;
+   
 }
 
 /* Header */
@@ -352,6 +353,9 @@ button a {
     }
 }
 
+
+
+
 /* footer */
 footer {
     padding: 10px;
@@ -493,7 +497,7 @@ footer {
 @media (max-width: 768px) {
 
     body {
-        background-image: url('../IMG/backgroundMobile.svg');
+        background-image: url('../IMG/personal-circle.gif');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -563,7 +567,7 @@ footer {
     }
 
     body {
-        background-image: url('../IMG/backgroundMobile.svg');
+        background-image: url('../IMG/personal-circle.gif');
         background-size: cover;
         background-repeat: no-repeat;
     }
