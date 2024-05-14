@@ -1,0 +1,513 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto Condensed", sans-serif;  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Roboto Condensed", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*font-family: "Oswald", sans-serif;  */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*   font-family: "Kanit", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Bebas Neue", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*   font-family: "Cabin", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/*   font-family: "Titillium Web", sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out; 
+}
+
+/* header */
+header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+}
+.menunav{
+    display: flex;
+}
+.menunav ul{
+display: flex;
+gap: 50px;
+}
+.menunav ul li, .contato li{
+    list-style: none;
+}
+.menunav ul li a, .contato a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif; 
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+}
+.menunav ul li a:hover{
+  color: #2eadff;
+
+transition: all .3s ease-in-out;
+}
+.contato button {
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+    clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+    height: 40px;
+    font-size: 0.7rem;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    transition: .2s .1s;
+    background-image: linear-gradient(90deg,#1c1c1c,#0d4971);
+    border: 0 solid;
+    overflow: hidden;
+  }
+  .contato button:hover {
+    cursor: pointer;
+    transition: all .3s ease-in;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  
+/* fim header */
+
+body{
+    background-image: url('../IMG/backgroundService.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-attachment: fixed;
+   
+}
+.services-box{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.card {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(266, 92%, 58%);
+  
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    padding: 1rem;
+    width: 19rem;
+    background-color: hsla(240, 15%, 9%, 1);
+    background-image: radial-gradient(
+        at 88% 40%,
+        hsla(240, 15%, 9%, 1) 0px,
+        transparent 85%
+      ),
+      radial-gradient(at 49% 30%, rgb(32, 23, 117) 0px, transparent 85%),
+      radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+      radial-gradient(at 0% 64%, rgb(56, 15, 168) 0px, transparent 85%),
+      radial-gradient(at 41% 94%, rgb(47, 35, 228) 0px, transparent 85%),
+      radial-gradient(at 100% 99%, rgb(5, 13, 116) 0px, transparent 85%);
+  
+    border-radius: 1rem;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+  }
+  
+  .card .card__border {
+    overflow: hidden;
+    pointer-events: none;
+  
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient(
+      0deg,
+      hsl(0, 0%, 100%) -50%,
+      hsl(0, 0%, 40%) 100%
+    );
+  
+    border-radius: 1rem;
+  }
+  
+  .card .card__border::before {
+    content: "";
+    pointer-events: none;
+  
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), rotate(0deg);
+    transform-origin: left;
+  
+    width: 200%;
+    height: 10rem;
+    background-image: linear-gradient(
+      0deg,
+      hsla(0, 0%, 100%, 0) 0%,
+      hsl(216, 95%, 60%) 40%,
+      hsl(244, 95%, 60%) 60%,
+      hsla(0, 0%, 40%, 0) 100%
+    );
+  
+    animation: rotate 8s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card .card_title__container .card_title {
+    font-size: 1rem;
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  
+  .card .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--line);
+  
+    border: none;
+  }
+  
+  .card .card__list {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .card .card__list .card__list_item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .card .card__list .card__list_item .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 1rem;
+    height: 1rem;
+    background-color: #04142c;
+  
+    border-radius: 50%;
+  }
+  
+  .card .card__list .card__list_item .check .check_svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  
+    fill:#fff;
+  }
+  
+  .card .card__list .card__list_item .list_text {
+    font-size: 0.75rem;
+    color: var(--white);
+  }
+  
+  .card .btn-lerMais {
+    cursor: pointer;
+    text-decoration:none;
+    text-align:center;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #04142c;
+    font-family: "Montserrat", sans-serif;
+  
+    font-size: 0.75rem;
+    color: var(--white);
+  
+    border: 0;
+    border-radius: 9999px;
+
+  }
+  .btn-lerMais:hover{
+    background-color: #4fa9d5;
+    color: #04142c;
+  }
+  
+.box-services{
+padding: 30px;
+
+gap: 450px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ 
+
+.box-servicos{
+    width: 100%;
+    transition: .3s all ease;
+    margin-bottom: 25px;
+}
+.box-servicos:hover{
+    transition: .3s all ease;
+    transform: scale(1.05);
+    
+}
+
+
+.servicos h3{
+    background-color: #0d4971;
+        border-radius: 10px 10px 0px 0px;
+        padding: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 15px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+}
+.servicosInfo, .servicosInfo2{
+    margin-bottom: 15px;
+}
+.servicosInfo p{
+    background-color: #04142c;
+        font-size: 20px;
+        font-style: italic;
+        padding: 20px;
+        color: #fff;
+        font-weight: 100;
+        font-family: "Roboto Condensed", sans-serif; 
+}
+ .btn:link,
+.btn:visited {
+   margin-bottom: 20px;
+ text-transform: capitalize;
+ font-family: "Roboto Condensed", sans-serif; 
+ background-color: #0d4971;
+ text-decoration: none;
+ color: #fff;
+ padding: 10px 30px;
+justify-content: center;
+ display: flex;
+ border-radius: 0px 0px 10px 10px;
+ 
+ transition: all .2s;
+ position: relative;
+}
+
+.btn:hover {
+    transition: all .2s;
+background-color: #4fa9d5;
+}
+
+
+    .servicos2 h3{
+        background-color: #0d4971;
+        border-radius: 10px 10px 0px 0px;
+        padding: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 15px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        
+    }
+    .servicosInfo2 p{
+        background-color: #04142c;
+        font-size: 20px;
+        font-style: italic;
+        padding: 20px;
+        color: #fff;
+        font-weight: 100;
+        font-family: "Roboto Condensed", sans-serif; 
+       
+    }
+   
+  
+/* footer */
+footer{
+    padding: 10px;
+    border-top: #1c1c1c solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+   
+    padding: 10px;
+ 
+}
+.footer a{
+    text-decoration: none;
+}
+
+.btn-git {
+
+      display: flex;
+      background-color: rgb(24, 23, 23);
+      color: #ffffff;
+      padding: 0.5rem 1.4rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+      align-items: center;
+      border-radius: 0.5rem;
+      gap: 0.75rem;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transition: .6s ease;
+    }
+    
+    .btn-git svg {
+      height: 30px;
+    }
+    
+    .btn-git:hover {
+      box-shadow: none;
+    }
+    /* fim footer */
+
+    /* Estilos para o menu hambúrguer */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  /* Estilos para o menu responsivo */
+  @media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+  
+    .menunav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        padding: 25px;
+        transition: left 0.3s ease;
+        background-color: #04142cc0;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 0px 10px 10px 0px;
+    }
+  
+    .menunav ul.show {
+        left: 0;
+    }
+  
+    .menunav ul li {
+        text-align: center;
+        
+       
+    }
+  
+    .menunav ul li a {
+      border-radius: .25rem;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 400;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding: 15px;
+      color: #fff;
+      -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+      clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+      height: 40px;
+      font-size: 0.7rem;
+      line-height: 14px;
+      letter-spacing: 1.2px;
+      transition: .2s .1s;
+      background-image: linear-gradient(90deg,#1c1c1c,#0d4971);
+      border: 0 solid;
+      overflow: hidden;
+    }
+    .menunav ul li a:hover{
+      transform: scale(115%);
+    }
+    .contato {
+        margin-top: 20px;
+    }
+  }
+  
+  /* Animação do menu hambúrguer */
+  .hamburger-menu.toggle .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger-menu.toggle .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.toggle .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  @media (max-width: 768px){
+
+    body{
+      background-image: url('../IMG/background.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }  
+    .services-box{
+        display: flex;
+        align-items: center;
+   
+    
+    } 
+    .box-services{
+        display: flex;
+        align-items: center;
+        flex-direction: column;  
+
+        gap: 35px;
+       
+    }
+    .box-servicos{
+        width: 90%;
+margin: auto;
+
+margin-bottom: 25px;
+    }
+
+
+
+}
