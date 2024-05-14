@@ -35,6 +35,8 @@ body {
   background-image: url('../IMG/background.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1; /* Mantém a imagem no fundo */
   transition: all 0.5s ease-in-out;
 
 }
